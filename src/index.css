@@ -19,3 +19,37 @@ body {
 ::selection {
   @apply bg-ink-200 text-ink-950;
 }
+
+@layer utilities {
+  .bg-grid-fine {
+    background-image:
+      linear-gradient(to right, rgb(41 37 36 / 0.55) 1px, transparent 1px),
+      linear-gradient(to bottom, rgb(41 37 36 / 0.55) 1px, transparent 1px);
+    background-size: 56px 56px;
+    mask-image: linear-gradient(to bottom, black 0%, transparent 88%);
+  }
+
+  .bg-dot-soft {
+    background-image: radial-gradient(rgb(87 83 78 / 0.35) 1px, transparent 1px);
+    background-size: 28px 28px;
+    mask-image: radial-gradient(ellipse 80% 60% at 50% 20%, black, transparent);
+  }
+
+  .text-gradient-warm {
+    @apply bg-gradient-to-br from-ink-100 via-accent to-ink-400 bg-clip-text text-transparent;
+  }
+
+  .border-gradient-subtle {
+    border: 1px solid transparent;
+    background:
+      linear-gradient(#0c0a09, #0c0a09) padding-box,
+      linear-gradient(
+          135deg,
+          rgb(68 64 60 / 0.95),
+          rgb(41 37 36 / 0.45),
+          rgb(232 220 200 / 0.14)
+        )
+        border-box;
+    background-clip: padding-box, border-box;
+  }
+}

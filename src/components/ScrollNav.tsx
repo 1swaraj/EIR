@@ -15,24 +15,34 @@ export function ScrollNav() {
 
   return (
     <header
-      className={`fixed left-0 right-0 top-0 z-40 border-b border-transparent pt-[env(safe-area-inset-top,0px)] transition-all duration-300 ${
-        visible ? "border-ink-800/80 bg-ink-950/85 py-3 backdrop-blur-md" : "pointer-events-none bg-transparent py-5"
+      className={`fixed inset-x-0 top-0 z-[100] pt-[env(safe-area-inset-top,0px)] transition-colors duration-300 ${
+        visible
+          ? "border-b border-ink-800/80 bg-ink-950/90 shadow-[0_8px_32px_-12px_rgba(0,0,0,0.65)] backdrop-blur-md backdrop-saturate-150"
+          : "border-b border-transparent bg-transparent"
       }`}
     >
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 md:px-8">
+      {/* Fixed row height — no py toggle — avoids layout jump / “broken” header */}
+      <div className="mx-auto flex h-14 max-w-6xl items-center justify-between gap-3 px-4 sm:gap-4 md:px-8">
         <a
           href="#"
-          className={`font-display text-sm font-bold tracking-tight text-ink-100 transition-opacity ${
-            visible ? "opacity-100" : "opacity-0"
+          className={`min-w-0 shrink font-display text-sm font-bold tracking-tight text-ink-100 transition-opacity duration-300 sm:text-[0.9375rem] ${
+            visible ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0"
           }`}
+          aria-hidden={!visible}
+          tabIndex={visible ? 0 : -1}
         >
-          Monad · Summer Founders
+          <span className="block truncate">
+            <span className="sm:hidden">Monad · Founders</span>
+            <span className="hidden sm:inline">Monad · Summer Founders</span>
+          </span>
         </a>
         <a
           href={APPLY_URL}
-          className={`rounded-full bg-ink-100 px-5 py-2 font-sans text-xs font-semibold text-ink-950 transition hover:bg-white ${
-            visible ? "opacity-100" : "pointer-events-none opacity-0"
+          className={`shrink-0 whitespace-nowrap rounded-full bg-ink-100 px-4 py-2 font-sans text-xs font-semibold text-ink-950 shadow-sm transition hover:bg-white sm:px-5 ${
+            visible ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0"
           }`}
+          aria-hidden={!visible}
+          tabIndex={visible ? 0 : -1}
         >
           Apply
         </a>

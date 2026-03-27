@@ -1,3 +1,4 @@
+import { PageBackground } from "./components/PageBackground";
 import { ScrollNav } from "./components/ScrollNav";
 import { StickyCTA } from "./components/StickyCTA";
 import { FAQ } from "./sections/FAQ";
@@ -12,9 +13,10 @@ import { WhyMonad } from "./sections/WhyMonad";
 
 export default function App() {
   return (
-    <>
+    <div className="relative min-h-screen">
+      <PageBackground />
       <ScrollNav />
-      <main className="pb-[calc(5rem+env(safe-area-inset-bottom,0px))] md:pb-0">
+      <main className="relative z-10 pb-[calc(5rem+env(safe-area-inset-bottom,0px))] md:pb-0">
         <Hero />
         <RealityCheck />
         <ForNotFor />
@@ -26,6 +28,6 @@ export default function App() {
         <FinalCTA />
       </main>
       <StickyCTA />
-    </>
+    </div>
   );
 }

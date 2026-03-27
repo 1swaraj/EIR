@@ -4,13 +4,30 @@ type SectionLabelProps = {
 };
 
 export function SectionLabel({ children, align = "left" }: SectionLabelProps) {
+  const line =
+    align === "right" ? (
+      <span className="h-px w-10 shrink-0 bg-gradient-to-l from-accent/50 to-transparent" aria-hidden />
+    ) : (
+      <span className="h-px w-10 shrink-0 bg-gradient-to-r from-accent/50 to-transparent" aria-hidden />
+    );
+
   return (
     <p
-      className={`mb-6 font-sans text-[11px] font-semibold uppercase tracking-[0.22em] text-accent-muted ${
-        align === "right" ? "text-right" : ""
+      className={`mb-6 flex items-center gap-3 font-sans text-[11px] font-semibold uppercase tracking-[0.22em] text-accent-muted ${
+        align === "right" ? "justify-end text-right" : ""
       }`}
     >
-      {children}
+      {align === "right" ? (
+        <>
+          <span>{children}</span>
+          {line}
+        </>
+      ) : (
+        <>
+          {line}
+          <span>{children}</span>
+        </>
+      )}
     </p>
   );
 }
