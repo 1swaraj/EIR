@@ -1,16 +1,21 @@
+import { useId } from "react";
+
 /** Purely decorative SVGs for hero — aria-hidden everywhere */
 export function HeroRingAccent({ className = "" }: { className?: string }) {
+  const uid = useId().replace(/:/g, "");
+  const g1 = `${uid}-hr1`;
+  const g2 = `${uid}-hr2`;
   return (
     <svg className={className} viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-      <circle cx="200" cy="200" r="178" stroke="url(#hr1)" strokeWidth="1" opacity="0.35" />
-      <circle cx="200" cy="200" r="142" stroke="url(#hr2)" strokeWidth="1" strokeDasharray="8 14" opacity="0.45" />
+      <circle cx="200" cy="200" r="178" stroke={`url(#${g1})`} strokeWidth="1" opacity="0.35" />
+      <circle cx="200" cy="200" r="142" stroke={`url(#${g2})`} strokeWidth="1" strokeDasharray="8 14" opacity="0.45" />
       <circle cx="200" cy="200" r="108" stroke="rgb(232 220 200 / 0.12)" strokeWidth="1" />
       <defs>
-        <linearGradient id="hr1" x1="40" y1="40" x2="360" y2="360" gradientUnits="userSpaceOnUse">
+        <linearGradient id={g1} x1="40" y1="40" x2="360" y2="360" gradientUnits="userSpaceOnUse">
           <stop stopColor="rgb(232 220 200)" stopOpacity="0.5" />
           <stop offset="1" stopColor="rgb(68 64 60)" stopOpacity="0.2" />
         </linearGradient>
-        <linearGradient id="hr2" x1="360" y1="80" x2="80" y2="320" gradientUnits="userSpaceOnUse">
+        <linearGradient id={g2} x1="360" y1="80" x2="80" y2="320" gradientUnits="userSpaceOnUse">
           <stop stopColor="rgb(232 220 200)" stopOpacity="0.35" />
           <stop offset="1" stopColor="rgb(41 37 36)" stopOpacity="0.1" />
         </linearGradient>
