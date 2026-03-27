@@ -76,8 +76,8 @@ export function Hero() {
 
                   <p className="mx-auto mt-8 max-w-xl font-sans text-base leading-relaxed text-ink-300 md:text-lg">
                     Prototype-first program for India&apos;s{" "}
-                    <span className="font-semibold text-ink-100">misfit student builders</span>. Small stipend, weekly demos, serious
-                    standards-on Monad.
+                    <span className="font-semibold text-ink-100">misfit student builders</span>. You&apos;re already building. Now get
+                    paid to keep going. Weekly demos, serious standards-on Monad.
                   </p>
 
                   <p className="mt-6 font-mono text-[10px] uppercase tracking-[0.12em] text-ink-600 sm:text-[11px]">

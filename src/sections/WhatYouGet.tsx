@@ -43,10 +43,10 @@ export function WhatYouGet() {
           <Reveal>
             <SectionLabel>What you get</SectionLabel>
             <h2 className="font-display text-3xl font-bold tracking-tight text-ink-50 md:text-4xl">
-              Small stipend. Serious advantages.
+              You&apos;re already building. Now get paid to keep going.
             </h2>
             <p className="mt-5 font-sans text-base leading-relaxed text-ink-400">
-              The stipend keeps you building. Everything else is why you should be here.
+              Support for momentum. Everything else is why you should be here.
             </p>
           </Reveal>
         </div>

@@ -19,7 +19,7 @@ export function TheProblem() {
             <div className="card-interactive mt-12 rounded-2xl border border-ink-800/50 bg-ink-900/25 p-8 font-sans text-ink-300 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.04)] backdrop-blur-sm md:mt-14 md:p-10">
               <div className="space-y-6 text-[0.9375rem] leading-[1.75] md:text-base md:leading-[1.7]">
                 <p>
-                  They attract résumé-builders, stipend optimizers, and polished pitch-deck recitors. The actual builders-the ones who
+                  They attract résumé-builders, credential hunters, and polished pitch-deck recitors. The actual builders-the ones who
                   ship at 2am, who have half-broken prototypes living on Vercel-never apply. Or worse, they get filtered out.
                 </p>
                 <p className="text-ink-400">We designed this program to invert that selection.</p>
