@@ -91,23 +91,33 @@ export function Hero() {
 
       <div className="relative z-10 flex flex-1 flex-col justify-center px-4 pb-32 pt-[calc(env(safe-area-inset-top)+3.5rem)] sm:px-6 md:px-10 md:pb-36 lg:px-12">
         <div className="mx-auto w-full max-w-7xl">
-          {/* Top ribbon: status + badges */}
+          {/* Program name — always visible */}
           <Reveal>
-            <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
-              <div className="flex flex-wrap items-center gap-3">
-                <span className="relative flex items-center gap-2 rounded-full border border-ink-700/80 bg-ink-950/70 py-1.5 pl-2 pr-4 font-sans text-[10px] font-semibold uppercase tracking-[0.2em] text-ink-200 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.05)] backdrop-blur-md sm:text-[11px]">
-                  <span className="relative flex h-6 w-6 items-center justify-center rounded-full bg-ink-800/90 ring-1 ring-ink-600/80">
-                    <span className="absolute h-2 w-2 animate-pulse rounded-full bg-accent/90 shadow-[0_0_12px_rgba(232,220,200,0.45)] motion-reduce:animate-none" />
-                  </span>
-                  Accepting applications
-                </span>
-                <span className="rounded-full border border-dashed border-ink-600/70 px-3 py-1.5 font-mono text-[10px] font-medium uppercase tracking-wider text-ink-500">
-                  India · Student builders
-                </span>
+            <div className="flex flex-col gap-4 border-b border-ink-800/50 pb-8 sm:flex-row sm:items-end sm:justify-between sm:gap-6">
+              <div className="min-w-0">
+                <p className="font-mono text-[10px] font-semibold uppercase tracking-[0.28em] text-accent-muted">Program</p>
+                <h2 className="mt-2 font-display text-2xl font-semibold leading-tight tracking-tight text-ink-50 sm:text-3xl md:text-[clamp(1.5rem,1.1rem+1.5vw,2rem)]">
+                  Monad Summer Founders Program
+                </h2>
               </div>
-              <div className="hidden font-display text-5xl font-bold tabular-nums leading-none text-ink-900/50 sm:block md:text-6xl">
+              <div className="shrink-0 font-display text-4xl font-bold tabular-nums leading-none text-ink-800/60 sm:text-5xl md:text-6xl">
                 2025
               </div>
+            </div>
+          </Reveal>
+
+          {/* Status ribbon */}
+          <Reveal delay={50}>
+            <div className="mt-6 flex flex-wrap items-center gap-3">
+              <span className="relative flex items-center gap-2 rounded-full border border-ink-700/80 bg-ink-950/70 py-1.5 pl-2 pr-4 font-sans text-[10px] font-semibold uppercase tracking-[0.2em] text-ink-200 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.05)] backdrop-blur-md sm:text-[11px]">
+                <span className="relative flex h-6 w-6 items-center justify-center rounded-full bg-ink-800/90 ring-1 ring-ink-600/80">
+                  <span className="absolute h-2 w-2 animate-pulse rounded-full bg-accent/90 shadow-[0_0_12px_rgba(232,220,200,0.45)] motion-reduce:animate-none" />
+                </span>
+                Accepting applications
+              </span>
+              <span className="rounded-full border border-dashed border-ink-600/70 px-3 py-1.5 font-mono text-[10px] font-medium uppercase tracking-wider text-ink-500">
+                India · Student builders
+              </span>
             </div>
           </Reveal>
 
