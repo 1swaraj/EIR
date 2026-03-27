@@ -4,59 +4,62 @@ import { SectionLabel } from "../components/SectionLabel";
 const steps = [
   {
     n: "01",
-    title: "Apply with proof",
-    body: "Link work we can inspect—repos, demos, writing. No generic essays.",
+    title: "Sourced & Screened",
+    body: "We find you through scout networks, campus signals, and outbound. Quick screen—shipped work matters more than pedigree.",
     highlight: false,
   },
   {
     n: "02",
-    title: "Onboard & scope",
-    body: "Lock a summer-sized problem. Narrow beats noble.",
-    highlight: false,
-  },
-  {
-    n: "03",
-    title: "Build gate",
-    body: "Ship to a defined milestone on Monad. Stipend unlocks here—not before.",
+    title: "Build Gate",
+    body: "Before any stipend begins, you build a simple prototype in 14–28 days. Monad-aligned idea or your own (with approval). No slides. Just code.",
     highlight: true,
   },
   {
+    n: "03",
+    title: "Working Demo + Tradeoffs",
+    body: "Pass condition: a working demo and a clear explanation of tradeoffs made. We're checking for taste, speed, and self-awareness.",
+    highlight: false,
+  },
+  {
     n: "04",
-    title: "Demo cadence",
-    body: "Weekly demos until the cohort ends. No disappearing acts.",
+    title: "Stipend Phase",
+    body: "Up to 6 months. Monthly stipend. Weekly demos. Ship product progress, user learnings, or distribution experiments with real data.",
+    highlight: false,
+  },
+  {
+    n: "05",
+    title: "Breakout Support",
+    body: "Show real traction? We help with grants, funding support, distribution, and deeper ecosystem backing.",
     highlight: false,
   },
 ];
 
 export function HowItWorks() {
   return (
-    <section className="relative border-b border-ink-800/80 py-24 md:py-32">
+    <section id="process" className="scroll-mt-24 relative border-b border-ink-800/80 py-24 md:py-32">
       <div className="pointer-events-none absolute bottom-0 left-1/2 h-px w-[min(90vw,56rem)] -translate-x-1/2 bg-gradient-to-r from-transparent via-ink-700/40 to-transparent" />
-      <div className="relative mx-auto max-w-6xl px-4 md:px-8">
+      <div className="relative mx-auto max-w-4xl px-4 md:px-8">
         <Reveal>
-          <SectionLabel>How it works</SectionLabel>
-          <h2 className="max-w-xl font-display text-3xl font-bold tracking-tight text-ink-50 md:text-4xl">
-            Build first. Stipend after the gate.
+          <SectionLabel>The process</SectionLabel>
+          <h2 className="font-display text-3xl font-bold tracking-tight text-ink-50 md:text-4xl lg:text-5xl">
+            Prove it, then get paid.
           </h2>
         </Reveal>
 
-        <div className="mt-16 grid grid-cols-1 gap-px overflow-hidden rounded-2xl border border-ink-800/80 bg-ink-800/80 md:grid-cols-2">
+        <div className="mt-14 space-y-0">
           {steps.map((s, i) => (
-            <Reveal key={s.n} className="h-full min-h-0" delay={i * 70}>
+            <Reveal key={s.n} delay={i * 55}>
               <div
-                className={`relative flex h-full min-h-0 gap-6 bg-ink-950 p-8 md:p-10 ${
+                className={`flex gap-5 border-b border-ink-800/80 py-8 last:border-b-0 md:gap-8 md:py-10 ${
                   s.highlight
-                    ? "bg-[linear-gradient(135deg,rgba(232,220,200,0.07)_0%,rgba(12,10,9,1)_48%)] shadow-[inset_3px_0_0_0_rgba(232,220,200,0.45)]"
+                    ? "relative -mx-4 rounded-xl border border-ink-700/80 bg-[linear-gradient(135deg,rgba(232,220,200,0.06)_0%,rgba(12,10,9,0.4)_50%)] px-4 shadow-[inset_3px_0_0_0_rgba(232,220,200,0.4)] md:-mx-6 md:px-6"
                     : ""
                 }`}
               >
-                <div className="relative flex shrink-0 flex-col items-center">
-                  <span className="font-display text-sm font-bold tabular-nums text-ink-500">{s.n}</span>
-                  <span className="mt-2 block h-12 w-px bg-gradient-to-b from-ink-600 to-transparent md:h-16" aria-hidden />
-                </div>
-                <div className="relative min-w-0">
+                <span className="w-9 shrink-0 pt-1 font-mono text-xs font-medium tabular-nums text-accent-muted/80">{s.n}</span>
+                <div className="min-w-0">
                   <h3 className="font-display text-lg font-semibold text-ink-100">{s.title}</h3>
-                  <p className="mt-2 max-w-sm font-sans text-sm leading-relaxed text-ink-400">{s.body}</p>
+                  <p className="mt-2 font-sans text-sm leading-relaxed text-ink-400 md:text-[0.9375rem]">{s.body}</p>
                 </div>
               </div>
             </Reveal>

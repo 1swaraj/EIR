@@ -10,19 +10,25 @@ export function WhyMonad() {
           <div className="min-w-0 lg:col-span-7">
             <Reveal>
               <SectionLabel>Why Monad</SectionLabel>
-              <h2 className="font-display text-3xl font-bold tracking-tight text-ink-50 md:text-4xl">
-                Built for applications, not slogans.
+              <h2 className="font-display text-3xl font-bold tracking-tight text-ink-50 md:text-4xl lg:text-5xl">
+                A technical frontier
+                <br />
+                worth building on.
               </h2>
             </Reveal>
             <Reveal delay={90}>
-              <div className="mt-8 space-y-5 font-sans text-base leading-relaxed text-ink-300">
+              <div className="mt-8 space-y-5 font-sans text-base leading-relaxed text-ink-300 md:text-lg">
                 <p className="rounded-lg border-l-2 border-ink-700 pl-5">
-                  You’re not here to debate chain theology. You’re here because execution on L1 should feel
-                  fast enough that product decisions stay in your head—not in gas math.
+                  Monad is a high-performance EVM-compatible L1 built for real throughput. It&apos;s the kind of infrastructure that
+                  creates room for ambitious applications that weren&apos;t possible before.
                 </p>
                 <p>
-                  Monad’s builder advantage is simple: room to iterate where users notice. Fewer excuses
-                  between “idea” and “someone used it.”
+                  This program gives you direct access to the ecosystem—problem statements, technical guidance, and distribution
+                  pathways that independent builders don&apos;t typically get.
+                </p>
+                <p className="font-medium text-ink-100">
+                  You don&apos;t need to be crypto-native to apply. You need to be the kind of builder who gets excited by hard
+                  infrastructure problems and wants to ship something real.
                 </p>
               </div>
             </Reveal>
@@ -31,9 +37,9 @@ export function WhyMonad() {
             <div className="border-gradient-subtle relative flex h-full min-h-0 flex-col justify-center overflow-hidden rounded-2xl bg-ink-950 p-8 shadow-[0_24px_80px_-40px_rgba(0,0,0,0.85)]">
               <div className="pointer-events-none absolute -right-10 top-10 h-32 w-32 rounded-full bg-accent/10 blur-3xl" />
               <div className="relative">
-                <p className="font-display text-xl font-semibold text-accent">Ship where latency isn’t the villain.</p>
+                <p className="font-display text-xl font-semibold text-accent">Throughput that earns the UX.</p>
                 <p className="mt-4 font-sans text-sm leading-relaxed text-ink-500">
-                  Use the stack as a constraint that sharpens UX—not as marketing filler in your pitch.
+                  Build where latency and cost stop being the excuse—and product becomes the argument.
                 </p>
               </div>
             </div>

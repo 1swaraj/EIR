@@ -3,15 +3,19 @@ import { SectionLabel } from "../components/SectionLabel";
 import { IconCheck, IconX } from "../components/icons";
 
 const forItems = [
-  "You already build—repos, prototypes, side projects—not just ideate.",
-  "You want sharp critique from people who ship on-chain, not polite panels.",
-  "You’re fine being wrong in public if it gets you to v1 faster.",
+  "You've shipped something—even if it's ugly, broken, or unfinished",
+  "You build on weekends because you can't not build",
+  "You've deviated from the default placement path (or you're about to)",
+  "You're comfortable with iteration, pivots, and ambiguity",
+  "You want founder-quality feedback, not a certificate",
 ];
 
 const notItems = [
-  "You need a certificate to justify the summer to parents or placements.",
-  "You want guaranteed funding before you write a line of product.",
-  "You treat crypto as a vibe or a resume keyword—not a design space.",
+  "You're collecting fellowships for your LinkedIn",
+  "You have an idea but zero shipped artifacts",
+  "You can't commit to weekly demos",
+  "You're optimizing for the stipend, not the work",
+  "You need permission to start building",
 ];
 
 export function ForNotFor() {
@@ -20,9 +24,9 @@ export function ForNotFor() {
       <div className="pointer-events-none absolute right-0 top-1/2 h-64 w-64 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgba(232,220,200,0.04),transparent_70%)]" />
       <div className="relative mx-auto max-w-6xl px-4 md:px-8">
         <Reveal>
-          <SectionLabel>Hard filter</SectionLabel>
+          <SectionLabel>Self-select</SectionLabel>
           <h2 className="max-w-2xl font-display text-3xl font-bold tracking-tight text-ink-50 md:text-4xl">
-            Self-select out early.
+            Not for everyone. Good.
           </h2>
         </Reveal>
 
@@ -36,7 +40,7 @@ export function ForNotFor() {
                 </span>
                 <p className="font-display text-xs font-bold uppercase tracking-[0.2em] text-accent">For you</p>
               </div>
-              <ul className="mt-8 space-y-5 font-sans text-sm leading-relaxed text-ink-200">
+              <ul className="mt-8 space-y-4 font-sans text-sm leading-relaxed text-ink-200">
                 {forItems.map((line) => (
                   <li key={line} className="flex gap-3">
                     <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-md bg-ink-800/60">
@@ -58,7 +62,7 @@ export function ForNotFor() {
                 </span>
                 <p className="font-display text-xs font-bold uppercase tracking-[0.2em] text-ink-500">Not for you</p>
               </div>
-              <ul className="relative mt-8 space-y-5 font-sans text-sm leading-relaxed text-ink-500">
+              <ul className="relative mt-8 space-y-4 font-sans text-sm leading-relaxed text-ink-500">
                 {notItems.map((line) => (
                   <li key={line} className="flex gap-3">
                     <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-md bg-ink-900/80">

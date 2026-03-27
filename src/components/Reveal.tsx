@@ -28,7 +28,7 @@ export function Reveal({ children, className = "", delay = 0 }: RevealProps) {
   return (
     <div
       ref={ref}
-      className={`min-h-0 min-w-0 transition-[opacity,transform] duration-700 ease-out ${
+      className={`w-full min-h-0 min-w-0 transition-[opacity,transform] duration-700 ease-out ${
         show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3"
       } ${className}`}
       style={reducedMotion ? undefined : { transitionDelay: `${delay}ms` }}

@@ -3,24 +3,40 @@ import { SectionLabel } from "../components/SectionLabel";
 
 const faqs: { q: string; a: string }[] = [
   {
-    q: "Who is this for?",
-    a: "Undergrad builders in India shipping product—CS or not—who want a ruthless summer, not a line item.",
+    q: "Do I need a team?",
+    a: "No. Solo builders are welcome. If you have a co-builder, great—but we select individuals, not pitch teams.",
   },
   {
-    q: "Remote or in person?",
-    a: "Hybrid where it helps; demos are synchronous. Details go out to admitted builders.",
+    q: "Do I need revenue or users?",
+    a: "No. We're looking for evidence of building and shipping behavior, not traction metrics. A scrappy prototype counts.",
   },
   {
-    q: "How much is the stipend?",
-    a: "Enough to remove excuses—not enough to be the point. Unlocks after the build gate.",
+    q: "Do I need to already be building on Monad?",
+    a: "No. You can choose a Monad-aligned problem statement or pitch your own idea for approval. We care about builder quality, not prior chain experience.",
   },
   {
-    q: "Do I need prior web3 experience?",
-    a: "You need taste and execution. Deep chain history optional; learning velocity isn’t.",
+    q: "Can I apply if I only have a rough prototype?",
+    a: "Yes—that's exactly the point. The build gate exists so you can prove you can ship, not that you already have a finished product.",
   },
   {
-    q: "What if I miss a demo?",
-    a: "Communicate early. Ghosting the room is how you exit—by design.",
+    q: "What if I'm going through campus placements?",
+    a: "That's your call. This program is designed for people who are questioning the default path. We won't tell you to drop placements, but we will expect weekly demos regardless.",
+  },
+  {
+    q: "What happens if I miss demo weeks?",
+    a: "Two missed demos in any rolling four-week window and you're terminated from the program. The weekly demo is the contract.",
+  },
+  {
+    q: "Is this remote or in-person?",
+    a: "Primarily remote with potential in-person touchpoints. Details shared on acceptance.",
+  },
+  {
+    q: "What kind of ideas are a fit?",
+    a: "Anything from DeFi infra and consumer apps to developer tools and data systems—as long as it's buildable on or adjacent to Monad and you can ship a prototype fast.",
+  },
+  {
+    q: "Is this only for crypto-native builders?",
+    a: "No. If you're a cracked builder who's excited by hard problems and fast iteration, that matters more than your crypto background.",
   },
 ];
 
@@ -31,14 +47,14 @@ export function FAQ() {
       <div className="relative mx-auto max-w-3xl px-4 md:px-8">
         <Reveal>
           <SectionLabel>FAQ</SectionLabel>
-          <h2 className="font-display text-3xl font-bold tracking-tight text-ink-50 md:text-4xl">
-            Short answers.
+          <h2 className="font-display text-3xl font-bold tracking-tight text-ink-50 md:text-4xl lg:text-5xl">
+            Questions you&apos;d actually ask.
           </h2>
         </Reveal>
 
         <dl className="mt-14 space-y-4">
           {faqs.map((item, i) => (
-            <Reveal key={item.q} delay={i * 50}>
+            <Reveal key={item.q} delay={i * 35}>
               <div className="group flex gap-5 rounded-xl border border-ink-800/70 bg-ink-900/20 p-6 transition hover:border-ink-700/80 hover:bg-ink-900/35 md:gap-6 md:p-7">
                 <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-ink-700/80 bg-ink-950 font-display text-sm font-bold text-accent-muted">
                   {String(i + 1).padStart(2, "0")}

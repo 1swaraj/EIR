@@ -17,12 +17,12 @@ export function FinalCTA() {
             <div className="min-w-0">
               <Reveal>
                 <h2 className="font-display text-3xl font-bold leading-tight tracking-tight text-ink-50 md:text-[2.35rem]">
-                  If you need convincing, you’re not ready.
+                  If you need convincing, you&apos;re not ready.
                 </h2>
               </Reveal>
               <Reveal delay={80}>
                 <p className="mt-5 max-w-lg font-sans text-base leading-relaxed text-ink-400">
-                  Applications are read by humans. Bring receipts—code, demos, traction. We’ll move fast and
+                  Applications are reviewed on a rolling basis. Bring receipts—repos, demos, users if you have them. We move fast and
                   tell you straight.
                 </p>
               </Reveal>
@@ -42,8 +42,10 @@ export function FinalCTA() {
         </div>
 
         <footer className="mt-20 flex flex-col gap-4 border-t border-ink-800/80 pt-10 font-sans text-xs text-ink-600 md:flex-row md:items-center md:justify-between">
-          <span>© {new Date().getFullYear()} Monad Summer Founders</span>
-          <span className="text-ink-700">Campus India · Builders only</span>
+          <span>© {new Date().getFullYear()} Monad Summer Founders Program</span>
+          <span className="text-center text-ink-700 md:text-right">
+            Built for builders, by builders · For student builders who ship
+          </span>
         </footer>
       </div>
     </section>

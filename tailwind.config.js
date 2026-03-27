@@ -29,6 +29,8 @@ export default {
       animation: {
         "fade-up": "fadeUp 0.7s ease-out forwards",
         "fade-in": "fadeIn 0.5s ease-out forwards",
+        "hero-breathe": "heroBreathe 14s ease-in-out infinite",
+        "hero-shimmer": "heroShimmer 8s ease-in-out infinite",
       },
       keyframes: {
         fadeUp: {
@@ -39,6 +41,18 @@ export default {
           "0%": { opacity: "0" },
           "100%": { opacity: "1" },
         },
+        heroBreathe: {
+          "0%, 100%": { opacity: "0.35", transform: "scale(1) translate(0, 0)" },
+          "50%": { opacity: "0.55", transform: "scale(1.08) translate(2%, -2%)" },
+        },
+        heroShimmer: {
+          "0%, 100%": { opacity: "0.5" },
+          "50%": { opacity: "0.85" },
+        },
+      },
+      boxShadow: {
+        "hero-cta": "0 0 0 1px rgba(255,255,255,0.12) inset, 0 2px 8px rgba(0,0,0,0.4), 0 0 48px -8px rgba(232,220,200,0.25)",
+        "hero-cta-hover": "0 0 0 1px rgba(255,255,255,0.2) inset, 0 4px 24px rgba(0,0,0,0.35), 0 0 64px -4px rgba(255,255,255,0.15)",
       },
     },
   },
