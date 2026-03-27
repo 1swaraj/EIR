@@ -21,7 +21,7 @@ export function FinalCTA() {
               </Reveal>
               <Reveal delay={80}>
                 <p className="mt-5 max-w-lg font-sans text-base leading-relaxed text-ink-400">
-                  Applications are reviewed on a rolling basis. Bring receipts—repos, demos, users if you have them. We move fast and
+                  Applications are reviewed on a rolling basis. Bring receipts-repos, demos, users if you have them. We move fast and
                   tell you straight.
                 </p>
               </Reveal>

@@ -1,6 +1,6 @@
 import { useId } from "react";
 
-/** Purely decorative SVGs for hero — aria-hidden everywhere */
+/** Purely decorative SVGs for hero - aria-hidden everywhere */
 export function HeroRingAccent({ className = "" }: { className?: string }) {
   const uid = useId().replace(/:/g, "");
   const g1 = `${uid}-hr1`;

@@ -7,7 +7,7 @@ import { IconArrowUpRight, IconCorner } from "../components/icons";
 export function Hero() {
   return (
     <section className="relative flex min-h-[100svh] flex-col overflow-hidden border-b border-ink-800/80">
-      {/* —— Atmospheric stack —— */}
+      {/* -- Atmospheric stack -- */}
       <div className="pointer-events-none absolute inset-0 bg-ink-950" />
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_110%_90%_at_10%_-15%,rgba(232,220,200,0.18),transparent_50%)]" />
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_100%_20%,rgba(87,83,78,0.35),transparent_55%)]" />
@@ -77,7 +77,7 @@ export function Hero() {
                   <p className="mx-auto mt-8 max-w-xl font-sans text-base leading-relaxed text-ink-300 md:text-lg">
                     Prototype-first program for India&apos;s{" "}
                     <span className="font-semibold text-ink-100">misfit student builders</span>. Small stipend, weekly demos, serious
-                    standards—on Monad.
+                    standards-on Monad.
                   </p>
 
                   <p className="mt-6 font-mono text-[10px] uppercase tracking-[0.12em] text-ink-600 sm:text-[11px]">

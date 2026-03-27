@@ -1,4 +1,4 @@
-/** Fixed decorative layers — sit behind content, never capture pointer events. */
+/** Fixed decorative layers - sit behind content, never capture pointer events. */
 export function PageBackground() {
   return (
     <div

@@ -28,7 +28,7 @@ export function DefaultPath() {
             The default path is crowded.
           </h2>
           <p className="mt-6 max-w-2xl font-sans text-base leading-relaxed text-ink-400 md:text-lg">
-            Placements are fine. Safe is fine. But if you already know you want to build something of your own—why wait?
+            Placements are fine. Safe is fine. But if you already know you want to build something of your own-why wait?
           </p>
         </Reveal>
 

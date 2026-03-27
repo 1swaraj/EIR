@@ -5,7 +5,7 @@ const cards = [
   {
     n: "01",
     title: "Monthly Stipend",
-    body: "Enough to keep building without distraction. This isn't a scholarship—it's fuel for momentum.",
+    body: "Enough to keep building without distraction. This isn't a scholarship-it's fuel for momentum.",
   },
   {
     n: "02",

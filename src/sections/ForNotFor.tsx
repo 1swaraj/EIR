@@ -3,7 +3,7 @@ import { SectionLabel } from "../components/SectionLabel";
 import { IconCheck, IconX } from "../components/icons";
 
 const forItems = [
-  "You've shipped something—even if it's ugly, broken, or unfinished",
+  "You've shipped something-even if it's ugly, broken, or unfinished",
   "You build on weekends because you can't not build",
   "You've deviated from the default placement path (or you're about to)",
   "You're comfortable with iteration, pivots, and ambiguity",

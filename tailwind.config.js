@@ -25,7 +25,7 @@ export default {
           DEFAULT: "#e8dcc8",
           muted: "#a89f8f",
         },
-        /** Monad brand purple — use with opacity utilities, e.g. text-monad/20 */
+        /** Monad brand purple - use with opacity utilities, e.g. text-monad/20 */
         monad: "#6855EF",
       },
       animation: {

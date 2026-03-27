@@ -1,4 +1,4 @@
-/** Monad logomark — decorative; use `className` for size and `text-*` for fill (fill="currentColor"). */
+/** Monad logomark - decorative; use `className` for size and `text-*` for fill (fill="currentColor"). */
 type MonadShapeProps = {
   className?: string;
 };

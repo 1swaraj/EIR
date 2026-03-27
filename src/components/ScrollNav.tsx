@@ -21,7 +21,7 @@ export function ScrollNav() {
           : "border-b border-transparent bg-transparent"
       }`}
     >
-      {/* Fixed row height — no py toggle — avoids layout jump / “broken” header */}
+      {/* Fixed row height - no py toggle - avoids layout jump / “broken” header */}
       <div className="mx-auto flex h-14 max-w-6xl items-center justify-between gap-3 px-4 sm:gap-4 md:px-8">
         <a
           href="#"
