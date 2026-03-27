@@ -28,7 +28,7 @@ export function WhyMonad() {
                 </p>
                 <p className="font-medium text-ink-100">
                   You don&apos;t need to be crypto-native to apply. You need to be the kind of builder who gets excited by hard
-                  infrastructure problems and wants to ship something real.
+                  problems—whether that&apos;s infrastructure, consumer, or something in between and wants to ship something real.
                 </p>
               </div>
             </Reveal>
