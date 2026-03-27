@@ -42,7 +42,7 @@ export function Hero() {
                 Monad Summer Founders Program
               </h2>
               <div className="shrink-0 font-display text-4xl font-bold tabular-nums leading-none text-ink-800/60 sm:text-5xl md:text-6xl">
-                2025
+                2026
               </div>
             </div>
           </Reveal>
