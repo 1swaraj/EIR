@@ -55,7 +55,7 @@ export function FAQ() {
         <dl className="mt-14 space-y-4">
           {faqs.map((item, i) => (
             <Reveal key={item.q} delay={i * 35}>
-              <div className="group flex gap-5 rounded-xl border border-ink-800/70 bg-ink-900/20 p-6 transition hover:border-ink-700/80 hover:bg-ink-900/35 md:gap-6 md:p-7">
+              <div className="card-interactive group flex gap-5 rounded-xl border border-ink-800/70 bg-ink-900/20 p-6 hover:border-ink-700/80 hover:bg-ink-900/35 md:gap-6 md:p-7">
                 <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-ink-700/80 bg-ink-950 font-display text-sm font-bold text-accent-muted">
                   {String(i + 1).padStart(2, "0")}
                 </div>

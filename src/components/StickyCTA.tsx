@@ -15,7 +15,7 @@ export function StickyCTA() {
 
   return (
     <div
-      className={`fixed bottom-0 left-0 right-0 z-50 border-t border-ink-800/80 bg-ink-950/90 backdrop-blur-md transition-transform duration-300 ease-out md:hidden ${
+      className={`fixed bottom-0 left-0 right-0 z-50 border-t border-ink-800/80 bg-ink-950/90 shadow-[0_-12px_40px_-16px_rgba(0,0,0,0.55)] backdrop-blur-md transition-[transform,box-shadow] duration-300 ease-out md:hidden ${
         showBar ? "translate-y-0" : "translate-y-full"
       }`}
     >
@@ -25,7 +25,7 @@ export function StickyCTA() {
         </p>
         <a
           href={APPLY_URL}
-          className="shrink-0 rounded-full bg-ink-100 px-5 py-2.5 font-sans text-sm font-semibold text-ink-950 transition hover:bg-white"
+          className="shrink-0 rounded-full bg-ink-100 px-5 py-2.5 font-sans text-sm font-semibold text-ink-950 transition-[background-color,transform,box-shadow] duration-200 hover:bg-white active:scale-[0.98] motion-safe:hover:-translate-y-px"
         >
           Apply
         </a>

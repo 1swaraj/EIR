@@ -28,8 +28,8 @@ export function Reveal({ children, className = "", delay = 0 }: RevealProps) {
   return (
     <div
       ref={ref}
-      className={`w-full min-h-0 min-w-0 transition-[opacity,transform] duration-700 ease-out ${
-        show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3"
+      className={`w-full min-h-0 min-w-0 transition-[opacity,transform] duration-[820ms] ease-reveal motion-reduce:duration-300 ${
+        show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
       } ${className}`}
       style={reducedMotion ? undefined : { transitionDelay: `${delay}ms` }}
     >

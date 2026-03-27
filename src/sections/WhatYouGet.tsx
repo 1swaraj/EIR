@@ -54,7 +54,7 @@ export function WhatYouGet() {
         <div className="mt-16 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6">
           {cards.map((c, i) => (
             <Reveal key={c.title} className="min-h-0" delay={i * 60}>
-              <article className="group relative flex h-full min-h-0 flex-col overflow-hidden rounded-2xl border border-ink-800/90 bg-gradient-to-b from-ink-900/70 via-ink-950/40 to-ink-950 p-6 shadow-[0_28px_100px_-56px_rgba(0,0,0,0.9)] transition hover:border-ink-600/90 sm:p-7">
+              <article className="card-interactive group relative flex h-full min-h-0 flex-col overflow-hidden rounded-2xl border border-ink-800/90 bg-gradient-to-b from-ink-900/70 via-ink-950/40 to-ink-950 p-6 shadow-[0_28px_100px_-56px_rgba(0,0,0,0.9)] hover:border-ink-600/90 sm:p-7">
                 <div className="absolute -right-4 -top-2 font-display text-6xl font-bold tabular-nums text-ink-800/80 transition group-hover:text-ink-700/70">
                   {c.n}
                 </div>

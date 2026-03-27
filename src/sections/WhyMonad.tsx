@@ -34,7 +34,7 @@ export function WhyMonad() {
             </Reveal>
           </div>
           <Reveal className="min-h-0 lg:col-span-4 lg:col-start-9" delay={120}>
-            <div className="border-gradient-subtle relative flex h-full min-h-0 flex-col justify-center overflow-hidden rounded-2xl bg-ink-950 p-8 shadow-[0_24px_80px_-40px_rgba(0,0,0,0.85)]">
+            <div className="border-gradient-subtle card-interactive relative flex h-full min-h-0 flex-col justify-center overflow-hidden rounded-2xl bg-ink-950 p-8 shadow-[0_24px_80px_-40px_rgba(0,0,0,0.85)]">
               <div className="pointer-events-none absolute -right-10 top-10 h-32 w-32 rounded-full bg-accent/10 blur-3xl" />
               <div className="relative">
                 <p className="font-display text-xl font-semibold text-accent">Throughput that earns the UX.</p>

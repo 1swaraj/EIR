@@ -1,3 +1,4 @@
+import { MonadShape } from "../components/MonadShape";
 import { Reveal } from "../components/Reveal";
 import { SectionLabel } from "../components/SectionLabel";
 
@@ -51,7 +52,7 @@ export function WeeklyDemo() {
         </div>
 
         <Reveal className="mt-14 w-full md:mt-16" delay={60}>
-          <div className="overflow-hidden rounded-2xl border border-ink-800/80 bg-gradient-to-b from-ink-900/55 via-ink-950/40 to-ink-950 shadow-[0_28px_100px_-56px_rgba(0,0,0,0.85)]">
+          <div className="card-interactive overflow-hidden rounded-2xl border border-ink-800/80 bg-gradient-to-b from-ink-900/55 via-ink-950/40 to-ink-950 shadow-[0_28px_100px_-56px_rgba(0,0,0,0.85)]">
             <div className="flex items-center gap-3 border-b border-ink-800/80 bg-ink-950/60 px-5 py-3 md:px-6">
               <span className="flex gap-1.5" aria-hidden>
                 <span className="h-2.5 w-2.5 rounded-full bg-ink-700" />
@@ -59,6 +60,7 @@ export function WeeklyDemo() {
                 <span className="h-2.5 w-2.5 rounded-full bg-ink-700" />
               </span>
               <span className="font-mono text-[11px] text-ink-500">demo_bar.md</span>
+              <MonadShape className="ml-auto h-5 w-5 shrink-0 text-monad opacity-60" />
             </div>
 
             <div className="p-6 md:p-8">

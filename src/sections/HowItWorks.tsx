@@ -50,10 +50,10 @@ export function HowItWorks() {
           {steps.map((s, i) => (
             <Reveal key={s.n} delay={i * 55}>
               <div
-                className={`flex gap-5 border-b border-ink-800/80 py-8 last:border-b-0 md:gap-8 md:py-10 ${
+                className={`flex gap-5 border-b border-ink-800/80 py-8 transition-colors duration-300 last:border-b-0 md:gap-8 md:py-10 ${
                   s.highlight
                     ? "relative -mx-4 rounded-xl border border-ink-700/80 bg-[linear-gradient(135deg,rgba(232,220,200,0.06)_0%,rgba(12,10,9,0.4)_50%)] px-4 shadow-[inset_3px_0_0_0_rgba(232,220,200,0.4)] md:-mx-6 md:px-6"
-                    : ""
+                    : "rounded-lg md:-mx-2 md:px-2 hover:bg-ink-950/50"
                 }`}
               >
                 <span className="w-9 shrink-0 pt-1 font-mono text-xs font-medium tabular-nums text-accent-muted/80">{s.n}</span>

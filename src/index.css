@@ -59,4 +59,18 @@ body {
         border-box;
     background-clip: padding-box, border-box;
   }
+
+  .card-interactive {
+    @apply transition-[transform,box-shadow,border-color] duration-300 ease-out will-change-transform;
+  }
+
+  .card-interactive:hover {
+    @apply -translate-y-0.5 shadow-[0_32px_80px_-40px_rgba(0,0,0,0.75)];
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .card-interactive:hover {
+      transform: none;
+    }
+  }
 }

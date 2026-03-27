@@ -19,7 +19,7 @@ export function TheProblem() {
           </div>
           <div className="min-w-0">
             <Reveal delay={100}>
-              <div className="space-y-6 rounded-2xl border border-ink-800/60 bg-ink-900/25 p-8 font-sans text-base leading-relaxed text-ink-300 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.04)] backdrop-blur-sm md:p-10">
+              <div className="card-interactive space-y-6 rounded-2xl border border-ink-800/60 bg-ink-900/25 p-8 font-sans text-base leading-relaxed text-ink-300 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.04)] backdrop-blur-sm md:p-10">
                 <p>
                   They attract résumé-builders, stipend optimizers, and polished pitch-deck recitors. The actual builders—the ones who
                   ship at 2am, who have half-broken prototypes living on Vercel—never apply. Or worse, they get filtered out.

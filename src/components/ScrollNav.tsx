@@ -15,7 +15,7 @@ export function ScrollNav() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-[100] pt-[env(safe-area-inset-top,0px)] transition-colors duration-300 ${
+      className={`fixed inset-x-0 top-0 z-[100] pt-[env(safe-area-inset-top,0px)] transition-[colors,box-shadow,backdrop-filter,border-color] duration-500 ease-out ${
         visible
           ? "border-b border-ink-800/80 bg-ink-950/90 shadow-[0_8px_32px_-12px_rgba(0,0,0,0.65)] backdrop-blur-md backdrop-saturate-150"
           : "border-b border-transparent bg-transparent"
@@ -38,7 +38,7 @@ export function ScrollNav() {
         </a>
         <a
           href={APPLY_URL}
-          className={`shrink-0 whitespace-nowrap rounded-full bg-ink-100 px-4 py-2 font-sans text-xs font-semibold text-ink-950 shadow-sm transition hover:bg-white sm:px-5 ${
+          className={`shrink-0 whitespace-nowrap rounded-full bg-ink-100 px-4 py-2 font-sans text-xs font-semibold text-ink-950 shadow-sm transition-[opacity,transform,background-color,box-shadow] duration-300 hover:-translate-y-px hover:bg-white hover:shadow-md motion-reduce:hover:translate-y-0 sm:px-5 ${
             visible ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0"
           }`}
           aria-hidden={!visible}

@@ -32,7 +32,7 @@ export function ForNotFor() {
 
         <div className="mt-14 grid grid-cols-1 items-stretch gap-6 md:grid-cols-2 md:gap-8">
           <Reveal className="min-h-0" delay={80}>
-            <div className="relative flex h-full min-h-0 flex-col overflow-hidden rounded-2xl border border-ink-700/80 bg-gradient-to-b from-ink-900/80 to-ink-950/90 p-8 shadow-[0_32px_120px_-48px_rgba(0,0,0,0.85)] md:p-10">
+            <div className="card-interactive relative flex h-full min-h-0 flex-col overflow-hidden rounded-2xl border border-ink-700/80 bg-gradient-to-b from-ink-900/80 to-ink-950/90 p-8 shadow-[0_32px_120px_-48px_rgba(0,0,0,0.85)] md:p-10">
               <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-accent/35 to-transparent" />
               <div className="flex items-center gap-3">
                 <span className="flex h-9 w-9 items-center justify-center rounded-full bg-ink-800/90 ring-1 ring-ink-600/80">
@@ -54,7 +54,7 @@ export function ForNotFor() {
           </Reveal>
 
           <Reveal className="min-h-0" delay={160}>
-            <div className="relative flex h-full min-h-0 flex-col overflow-hidden rounded-2xl border border-ink-800/70 bg-ink-950/80 p-8 md:p-10">
+            <div className="card-interactive relative flex h-full min-h-0 flex-col overflow-hidden rounded-2xl border border-ink-800/70 bg-ink-950/80 p-8 md:p-10">
               <div className="absolute inset-0 bg-[repeating-linear-gradient(-45deg,transparent,transparent_8px,rgba(41,37,36,0.35)_8px,rgba(41,37,36,0.35)_9px)] opacity-40" />
               <div className="relative flex items-center gap-3">
                 <span className="flex h-9 w-9 items-center justify-center rounded-full bg-ink-900 ring-1 ring-ink-700">

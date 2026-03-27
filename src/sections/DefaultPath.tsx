@@ -34,7 +34,7 @@ export function DefaultPath() {
 
         <div className="mt-14 grid gap-6 md:grid-cols-2 md:gap-8">
           <Reveal className="min-h-0" delay={80}>
-            <div className="flex h-full min-h-0 flex-col rounded-2xl border border-ink-800/80 bg-ink-950/60 p-8 md:p-10">
+            <div className="card-interactive flex h-full min-h-0 flex-col rounded-2xl border border-ink-800/80 bg-ink-950/60 p-8 md:p-10">
               <p className="font-mono text-[11px] font-medium uppercase tracking-[0.2em] text-ink-500">Default</p>
               <ul className="mt-8 space-y-3 font-sans text-sm leading-relaxed text-ink-500">
                 {defaultItems.map((line) => (
@@ -48,7 +48,7 @@ export function DefaultPath() {
           </Reveal>
 
           <Reveal className="min-h-0" delay={140}>
-            <div className="relative flex h-full min-h-0 flex-col overflow-hidden rounded-2xl border border-ink-700/80 bg-gradient-to-b from-ink-900/50 to-ink-950/90 p-8 shadow-[0_28px_100px_-56px_rgba(0,0,0,0.85)] md:p-10">
+            <div className="card-interactive relative flex h-full min-h-0 flex-col overflow-hidden rounded-2xl border border-ink-700/80 bg-gradient-to-b from-ink-900/50 to-ink-950/90 p-8 shadow-[0_28px_100px_-56px_rgba(0,0,0,0.85)] md:p-10">
               <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-accent/35 to-transparent" />
               <p className="font-mono text-[11px] font-medium uppercase tracking-[0.2em] text-accent-muted">Founder</p>
               <ul className="mt-8 space-y-3 font-sans text-sm leading-relaxed text-ink-200">

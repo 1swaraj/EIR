@@ -21,9 +21,17 @@ export function SectionLabel({ children, align = "left" }: SectionLabelProps) {
         <>
           <span>{children}</span>
           {line}
+          <span
+            className="relative flex h-1.5 w-1.5 shrink-0 rounded-full bg-accent/55 shadow-[0_0_14px_rgba(232,220,200,0.35)] motion-safe:animate-pulse-soft motion-reduce:animate-none"
+            aria-hidden
+          />
         </>
       ) : (
         <>
+          <span
+            className="relative flex h-1.5 w-1.5 shrink-0 rounded-full bg-accent/55 shadow-[0_0_14px_rgba(232,220,200,0.35)] motion-safe:animate-pulse-soft motion-reduce:animate-none"
+            aria-hidden
+          />
           {line}
           <span>{children}</span>
         </>
