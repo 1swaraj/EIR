@@ -94,7 +94,7 @@ function FractalStrip({ side, rowCount }: { side: "left" | "right"; rowCount: nu
   );
 }
 
-/** Phased color squares left + right — fills hero height; row count tracks `#top` size. */
+/** Phased color squares left + right - fills hero height; row count tracks `#top` size. */
 export function HeroFractalSideDecor() {
   const rowCount = useHeroStripRowCount();
   return (

@@ -9,7 +9,7 @@ export default {
         mono: ["var(--font-mono)", "ui-monospace", "monospace"],
       },
       colors: {
-        /** Legacy warm stone scale — kept for gradual migration */
+        /** Legacy warm stone scale - kept for gradual migration */
         ink: {
           50: "#fafaf9",
           100: "#f5f5f4",
@@ -41,7 +41,7 @@ export default {
           nav: "#09090b",
           border: "#e4e4e7",
         },
-        /** Monad brand — Figma variables */
+        /** Monad brand - Figma variables */
         monad: {
           DEFAULT: "#836EF9",
           cta: "#6e54ff",

@@ -18,14 +18,14 @@ export function TheProblem() {
             <div className="card-interactive mt-12 rounded-2xl border border-zinc-200/90 bg-surface-muted/80 p-8 shadow-soft md:mt-14 md:p-10">
               <div className="space-y-6 text-[0.9375rem] leading-[1.75] text-fg-secondary md:text-base md:leading-[1.7]">
                 <p>
-                  They attract résumé-builders, credential hunters, and polished pitch-deck recitors. The actual builders—the ones who
-                  ship at 2am, who have half-broken prototypes living on Vercel—never apply. Or worse, they get filtered out.
+                  They attract résumé-builders, credential hunters, and polished pitch-deck recitors. The actual builders-the ones who
+                  ship at 2am, who have half-broken prototypes living on Vercel-never apply. Or worse, they get filtered out.
                 </p>
                 <p className="text-fg-muted">We designed this program to invert that selection.</p>
               </div>
 
               <p className="mt-8 border-l-2 border-monad/50 pl-6 pt-1 font-display text-base font-semibold leading-relaxed text-fg-primary md:mt-10 md:text-lg md:leading-snug">
-                No pitch decks. No essays about your &quot;vision.&quot; Show us what you&apos;ve built. Then build more—every week—or
+                No pitch decks. No essays about your &quot;vision.&quot; Show us what you&apos;ve built. Then build more-every week-or
                 you&apos;re out.
               </p>
             </div>

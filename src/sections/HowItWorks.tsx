@@ -5,7 +5,7 @@ const steps = [
   {
     n: "01",
     title: "Sourced & Screened",
-    body: "We find you through scout networks, campus signals, and outbound. Quick screen—shipped work matters more than pedigree.",
+    body: "We find you through scout networks, campus signals, and outbound. Quick screen-shipped work matters more than pedigree.",
     highlight: false,
   },
   {

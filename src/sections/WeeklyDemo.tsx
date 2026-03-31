@@ -38,7 +38,7 @@ export function WeeklyDemo() {
             <div className="mt-6 space-y-4 font-sans text-base leading-relaxed text-fg-secondary">
               <p>
                 Each week you show what you shipped: product progress, user learning, or a distribution experiment with real data.
-                Doesn&apos;t need to be perfect—it needs to be real.
+                Doesn&apos;t need to be perfect-it needs to be real.
               </p>
               <p className="text-fg-primary/90">
                 Miss two demos in any rolling four-week window and you&apos;re out. No exceptions.

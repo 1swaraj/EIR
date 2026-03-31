@@ -53,7 +53,7 @@ export function Hero() {
             <p className="mx-auto mt-8 max-w-xl text-pretty font-sans text-lg leading-relaxed text-fg-secondary md:text-xl">
               Prototype-first program for India&apos;s{" "}
               <span className="font-semibold text-fg-primary">misfit student builders</span>. You&apos;re already building. Now get paid to keep
-              going. Weekly demos, serious standards—on Monad.
+              going. Weekly demos, serious standards-on Monad.
             </p>
           </Reveal>
 

@@ -1,13 +1,13 @@
 import { Reveal } from "../components/Reveal";
 import { APPLY_URL } from "../config";
-import { IconArrowUpRight, IconCorner, IconSocialDiscord, IconSocialInstagram, IconSocialX, IconSocialYouTube } from "../components/icons";
+import { IconArrowUpRight, IconCorner, IconSocialDiscord, IconSocialLinkedIn, IconSocialX, IconSocialYouTube } from "../components/icons";
 import { MonadLogoFull } from "../components/MonadLogoFull";
 
 const SOCIAL = [
-  { href: "https://x.com/monad_xyz", label: "Monad on X", Icon: IconSocialX },
+  { href: "https://x.com/monad", label: "Monad on X", Icon: IconSocialX },
   { href: "https://discord.gg/monad", label: "Monad on Discord", Icon: IconSocialDiscord },
-  { href: "https://www.youtube.com/@monad_xyz", label: "Monad on YouTube", Icon: IconSocialYouTube },
-  { href: "https://www.instagram.com/monad_xyz/", label: "Monad on Instagram", Icon: IconSocialInstagram },
+  { href: "https://www.youtube.com/@MonadFoundation", label: "Monad on YouTube", Icon: IconSocialYouTube },
+  { href: "https://www.linkedin.com/company/monad-foundation", label: "Monad Foundation on LinkedIn", Icon: IconSocialLinkedIn },
 ];
 
 export function FinalCTA() {
@@ -29,7 +29,7 @@ export function FinalCTA() {
               </Reveal>
               <Reveal delay={80}>
                 <p className="mt-5 max-w-lg font-sans text-base leading-relaxed text-fg-secondary">
-                  Applications are reviewed on a rolling basis. Bring receipts—repos, demos, users if you have them. We move fast and
+                  Applications are reviewed on a rolling basis. Bring receipts-repos, demos, users if you have them. We move fast and
                   tell you straight.
                 </p>
               </Reveal>

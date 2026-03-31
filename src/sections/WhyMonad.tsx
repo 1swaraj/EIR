@@ -23,12 +23,12 @@ export function WhyMonad() {
                   creates room for ambitious applications that weren&apos;t possible before.
                 </p>
                 <p>
-                  This program gives you direct access to the ecosystem—problem statements, technical guidance, and distribution
+                  This program gives you direct access to the ecosystem-problem statements, technical guidance, and distribution
                   pathways that independent builders don&apos;t typically get.
                 </p>
                 <p className="font-medium text-fg-primary">
                   You don&apos;t need to be crypto-native to apply. You need to be the kind of builder who gets excited by hard
-                  problems—whether that&apos;s infrastructure, consumer, or something in between—and wants to ship something real.
+                  problems-whether that&apos;s infrastructure, consumer, or something in between-and wants to ship something real.
                 </p>
               </div>
             </Reveal>
@@ -39,7 +39,7 @@ export function WhyMonad() {
               <div className="relative">
                 <p className="font-display text-xl font-semibold text-monad-deep">Throughput that earns the UX.</p>
                 <p className="mt-4 font-sans text-sm leading-relaxed text-fg-secondary">
-                  Build where latency and cost stop being the excuse—and product becomes the argument.
+                  Build where latency and cost stop being the excuse-and product becomes the argument.
                 </p>
               </div>
             </div>

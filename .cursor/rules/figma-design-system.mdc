@@ -6,7 +6,7 @@ globs:
 alwaysApply: false
 ---
 
-# Figma MCP — EIR (monad-summer-founders)
+# Figma MCP - EIR (monad-summer-founders)
 
 ## Connection (human setup)
 
@@ -24,30 +24,30 @@ alwaysApply: false
 
 ## Design tokens and styling
 
-- **Colors & extended theme**: `tailwind.config.js` — `ink` (50–950), `accent`, `monad` brand purple, custom shadows and animations.
+- **Colors & extended theme**: `tailwind.config.js` - `ink` (50–950), `accent`, `monad` brand purple, custom shadows and animations.
 - **Typography**: `--font-sans` (DM Sans), `--font-display` (Syne) in `src/index.css`; use `font-sans` / `font-display` and existing utilities.
-- **Global / utilities**: `src/index.css` — body defaults (`bg-ink-950`, `text-ink-100`), `@layer utilities` (e.g. `bg-grid-fine`, `text-gradient-warm`, `border-gradient-subtle`, `card-interactive`).
+- **Global / utilities**: `src/index.css` - body defaults (`bg-ink-950`, `text-ink-100`), `@layer utilities` (e.g. `bg-grid-fine`, `text-gradient-warm`, `border-gradient-subtle`, `card-interactive`).
 - Prefer **Tailwind utilities** and these tokens over raw hex from Figma when they align; reserve new hex only when no token fits, then consider extending `tailwind.config.js`.
 
 ## Component organization
 
-- **Page sections**: `src/sections/*.tsx` — large vertical sections composed in `App.tsx`.
-- **Shared UI / layout**: `src/components/*.tsx` — e.g. `PageBackground`, `ScrollNav`, `StickyCTA`, `SectionLabel`, `Reveal`, decorative pieces.
-- **Hooks**: `src/hooks/` — e.g. `useReveal`.
+- **Page sections**: `src/sections/*.tsx` - large vertical sections composed in `App.tsx`.
+- **Shared UI / layout**: `src/components/*.tsx` - e.g. `PageBackground`, `ScrollNav`, `StickyCTA`, `SectionLabel`, `Reveal`, decorative pieces.
+- **Hooks**: `src/hooks/` - e.g. `useReveal`.
 - New UI from Figma should **extend or mirror** existing components before adding one-off markup.
 
 ## Icons and assets
 
-- **Icons**: Inline SVG React components in `src/components/icons.tsx` (`Icon*` naming, `currentColor`, `aria-hidden` where decorative). Prefer adding icons here or using assets from Figma MCP — **do not** add new icon npm packages for Figma-driven work unless the project already uses them.
+- **Icons**: Inline SVG React components in `src/components/icons.tsx` (`Icon*` naming, `currentColor`, `aria-hidden` where decorative). Prefer adding icons here or using assets from Figma MCP - **do not** add new icon npm packages for Figma-driven work unless the project already uses them.
 - **Images**: Use project `public/` or Figma MCP asset URLs as returned; if the MCP provides a **localhost** asset URL, use it as documented by the server.
 
 ## Framework and config
 
 - **Stack**: Vite, React 18, TypeScript, Tailwind 3.
-- **Env**: `src/config.ts` — e.g. `VITE_APPLY_URL` for apply links.
+- **Env**: `src/config.ts` - e.g. `VITE_APPLY_URL` for apply links.
 
 ## Implementation rules
 
-- Treat MCP-generated React/Tailwind as **structure and visual reference**, not as final style authority — re-express with this repo’s class patterns and tokens.
+- Treat MCP-generated React/Tailwind as **structure and visual reference**, not as final style authority - re-express with this repo’s class patterns and tokens.
 - Preserve **accessibility**: semantic headings, focusable controls, meaningful labels where Figma implies buttons/links.
 - Keep **visual parity** with `get_screenshot` while staying consistent with existing animation and spacing patterns on the site.

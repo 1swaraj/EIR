@@ -4,7 +4,7 @@ import { SectionLabel } from "../components/SectionLabel";
 const faqs: { q: string; a: string }[] = [
   {
     q: "Do I need a team?",
-    a: "No. Solo builders are welcome. If you have a co-builder, great—but we select individuals, not pitch teams.",
+    a: "No. Solo builders are welcome. If you have a co-builder, great-but we select individuals, not pitch teams.",
   },
   {
     q: "Do I need revenue or users?",
@@ -16,7 +16,7 @@ const faqs: { q: string; a: string }[] = [
   },
   {
     q: "Can I apply if I only have a rough prototype?",
-    a: "Yes—that's exactly the point. The build gate exists so you can prove you can ship, not that you already have a finished product.",
+    a: "Yes-that's exactly the point. The build gate exists so you can prove you can ship, not that you already have a finished product.",
   },
   {
     q: "What if I'm going through campus placements?",
@@ -32,7 +32,7 @@ const faqs: { q: string; a: string }[] = [
   },
   {
     q: "What kind of ideas are a fit?",
-    a: "Anything from DeFi infra and consumer apps to developer tools and data systems—as long as it's buildable on or adjacent to Monad and you can ship a prototype fast.",
+    a: "Anything from DeFi infra and consumer apps to developer tools and data systems-as long as it's buildable on or adjacent to Monad and you can ship a prototype fast.",
   },
   {
     q: "Is this only for crypto-native builders?",
