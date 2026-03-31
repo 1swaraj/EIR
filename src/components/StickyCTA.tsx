@@ -21,7 +21,7 @@ export function StickyCTA() {
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-3">
         <p className="min-w-0 truncate font-display text-sm font-semibold tracking-tight text-fg-primary">
-          Monad Summer Founders
+          Monad Summer Founders Program
         </p>
         <a
           href={APPLY_URL}

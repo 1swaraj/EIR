@@ -42,6 +42,31 @@ body {
     mask-image: linear-gradient(to bottom, black 0%, transparent 92%);
   }
 
+  /**
+   * Hero only: background grid pitch matches fractal squares (`--hero-cell`).
+   * 52 / 56 match legacy min-heights; lg 65 = 260px strip ÷ 4 columns.
+   */
+  #top.hero-sync-cell {
+    --hero-cell: 52px;
+  }
+  @media (min-width: 640px) {
+    #top.hero-sync-cell {
+      --hero-cell: 56px;
+    }
+  }
+  @media (min-width: 1024px) {
+    #top.hero-sync-cell {
+      --hero-cell: 65px;
+    }
+  }
+
+  .bg-grid-hero-sync {
+    background-image:
+      linear-gradient(to right, rgb(228 228 231 / 0.55) 1px, transparent 1px),
+      linear-gradient(to bottom, rgb(228 228 231 / 0.55) 1px, transparent 1px);
+    background-size: var(--hero-cell) var(--hero-cell);
+  }
+
   .text-gradient-brand {
     @apply bg-gradient-to-r from-fg-primary via-monad to-monad-deep bg-clip-text text-transparent;
   }
