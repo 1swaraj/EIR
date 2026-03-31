@@ -1,4 +1,3 @@
-import { MonadShape } from "../components/MonadShape";
 import { Reveal } from "../components/Reveal";
 import { SectionLabel } from "../components/SectionLabel";
 
@@ -16,13 +15,13 @@ const progressGrid: DemoColumn[] = [
 
 export function WeeklyDemo() {
   return (
-    <section className="relative overflow-hidden border-b border-ink-800/80 py-24 md:py-32">
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_70%_45%_at_50%_0%,rgba(232,220,200,0.06),transparent_55%)]" />
+    <section id="demos" className="relative scroll-mt-28 overflow-hidden border-b border-zinc-200/80 bg-surface-muted/50 py-24 md:py-32">
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_70%_45%_at_50%_0%,rgba(131,110,249,0.08),transparent_55%)]" />
       <div
-        className="pointer-events-none absolute inset-0 opacity-[0.22] [mask-image:linear-gradient(to_bottom,black_0%,transparent_85%)]"
+        className="pointer-events-none absolute inset-0 opacity-[0.35] [mask-image:linear-gradient(to_bottom,black_0%,transparent_85%)]"
         style={{
-          backgroundImage: `linear-gradient(to right, rgb(41 37 36 / 0.4) 1px, transparent 1px),
-            linear-gradient(to bottom, rgb(41 37 36 / 0.4) 1px, transparent 1px)`,
+          backgroundImage: `linear-gradient(to right, rgb(228 228 231 / 0.7) 1px, transparent 1px),
+            linear-gradient(to bottom, rgb(228 228 231 / 0.7) 1px, transparent 1px)`,
           backgroundSize: "56px 56px",
         }}
       />
@@ -31,20 +30,20 @@ export function WeeklyDemo() {
         <div className="max-w-2xl">
           <Reveal>
             <SectionLabel>Weekly demo culture</SectionLabel>
-            <h2 className="font-display text-3xl font-bold leading-[1.15] tracking-tight text-ink-50 md:text-4xl">
+            <h2 className="font-display text-3xl font-bold leading-[1.15] tracking-tight text-fg-primary md:text-4xl">
               Weekly demo is the contract.
             </h2>
           </Reveal>
           <Reveal delay={80}>
-            <div className="mt-6 space-y-4 font-sans text-base leading-relaxed text-ink-400">
+            <div className="mt-6 space-y-4 font-sans text-base leading-relaxed text-fg-secondary">
               <p>
                 Each week you show what you shipped: product progress, user learning, or a distribution experiment with real data.
-                Doesn&apos;t need to be perfect-it needs to be real.
+                Doesn&apos;t need to be perfect—it needs to be real.
               </p>
-              <p className="text-ink-300">
+              <p className="text-fg-primary/90">
                 Miss two demos in any rolling four-week window and you&apos;re out. No exceptions.
               </p>
-              <p className="border-l-2 border-accent/30 pl-4 text-sm text-ink-500">
+              <p className="border-l-2 border-monad/35 pl-4 text-sm text-fg-muted">
                 We review what shipped, why it mattered, what you learned, and the smallest next de-risking step.
               </p>
             </div>
@@ -52,32 +51,32 @@ export function WeeklyDemo() {
         </div>
 
         <Reveal className="mt-14 w-full md:mt-16" delay={60}>
-          <div className="card-interactive overflow-hidden rounded-2xl border border-ink-800/80 bg-gradient-to-b from-ink-900/55 via-ink-950/40 to-ink-950 shadow-[0_28px_100px_-56px_rgba(0,0,0,0.85)]">
-            <div className="flex items-center gap-3 border-b border-ink-800/80 bg-ink-950/60 px-5 py-3 md:px-6">
+          <div className="card-interactive overflow-hidden rounded-2xl border border-zinc-200/90 bg-white shadow-soft-lg">
+            <div className="flex items-center gap-3 border-b border-zinc-200/80 bg-zinc-50/90 px-5 py-3 md:px-6">
               <span className="flex gap-1.5" aria-hidden>
-                <span className="h-2.5 w-2.5 rounded-full bg-ink-700" />
-                <span className="h-2.5 w-2.5 rounded-full bg-ink-700" />
-                <span className="h-2.5 w-2.5 rounded-full bg-ink-700" />
+                <span className="h-2.5 w-2.5 rounded-full bg-red-400/90" />
+                <span className="h-2.5 w-2.5 rounded-full bg-amber-400/90" />
+                <span className="h-2.5 w-2.5 rounded-full bg-emerald-400/90" />
               </span>
-              <span className="font-mono text-[11px] text-ink-500">demo_bar.md</span>
-              <MonadShape className="ml-auto h-5 w-5 shrink-0 text-monad opacity-60" />
+              <span className="font-mono text-[11px] text-fg-subtle">demo_bar.md</span>
+              <img src="/monad-logo-mark.svg" alt="" className="ml-auto h-5 w-auto shrink-0 opacity-70" width={20} height={20} />
             </div>
 
             <div className="p-6 md:p-8">
-              <div className="grid gap-10 md:grid-cols-3 md:gap-0 md:divide-x md:divide-ink-800/80">
+              <div className="grid gap-10 md:grid-cols-3 md:gap-0 md:divide-x md:divide-zinc-200/80">
                 {progressGrid.map((col) => (
                   <div key={col.label} className="md:px-6 md:first:pl-0 md:last:pr-0 lg:px-8">
                     <p
                       className={`font-mono text-[10px] font-semibold uppercase tracking-[0.2em] ${
-                        col.mutedLabel ? "text-ink-500" : "text-accent-muted"
+                        col.mutedLabel ? "text-fg-subtle" : "text-monad"
                       }`}
                     >
                       {col.label}
                     </p>
-                    <ul className="mt-4 space-y-2.5 font-sans text-sm leading-snug text-ink-300">
+                    <ul className="mt-4 space-y-2.5 font-sans text-sm leading-snug text-fg-secondary">
                       {col.items.map((item) => (
                         <li key={item} className="flex gap-2.5">
-                          <span className="mt-[0.35em] h-1 w-1 shrink-0 rounded-full bg-accent/40" aria-hidden />
+                          <span className="mt-[0.35em] h-1 w-1 shrink-0 rounded-full bg-monad/40" aria-hidden />
                           <span>{item}</span>
                         </li>
                       ))}

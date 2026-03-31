@@ -6,8 +6,10 @@ export default {
       fontFamily: {
         sans: ["var(--font-sans)", "system-ui", "sans-serif"],
         display: ["var(--font-display)", "system-ui", "sans-serif"],
+        mono: ["var(--font-mono)", "ui-monospace", "monospace"],
       },
       colors: {
+        /** Legacy warm stone scale — kept for gradual migration */
         ink: {
           50: "#fafaf9",
           100: "#f5f5f4",
@@ -25,8 +27,26 @@ export default {
           DEFAULT: "#e8dcc8",
           muted: "#a89f8f",
         },
-        /** Monad brand purple - use with opacity utilities, e.g. text-monad/20 */
-        monad: "#6855EF",
+        /** Figma-aligned UI */
+        fg: {
+          primary: "#0a0a0a",
+          secondary: "#3f3f46",
+          muted: "#71717a",
+          subtle: "#a1a1aa",
+          tertiary: "#a3a3a3",
+        },
+        surface: {
+          DEFAULT: "#ffffff",
+          muted: "#fafafa",
+          nav: "#09090b",
+          border: "#e4e4e7",
+        },
+        /** Monad brand — Figma variables */
+        monad: {
+          DEFAULT: "#836EF9",
+          cta: "#6e54ff",
+          deep: "#382bd1",
+        },
       },
       animation: {
         "fade-up": "fadeUp 0.7s ease-out forwards",
@@ -92,8 +112,12 @@ export default {
         reveal: "cubic-bezier(0.22, 1, 0.36, 1)",
       },
       boxShadow: {
-        "hero-cta": "0 0 0 1px rgba(255,255,255,0.12) inset, 0 2px 8px rgba(0,0,0,0.4), 0 0 48px -8px rgba(232,220,200,0.25)",
-        "hero-cta-hover": "0 0 0 1px rgba(255,255,255,0.2) inset, 0 4px 24px rgba(0,0,0,0.35), 0 0 64px -4px rgba(255,255,255,0.15)",
+        nav: "0 1px 2px 0 rgba(0,0,0,0.05)",
+        "cta-primary":
+          "0 1px 2px rgba(0,0,0,0.2), 0 0 0 1px rgba(79,71,235,0.9), inset 0 1px 0.5px rgba(255,255,255,0.25)",
+        "cta-primary-hover": "0 4px 24px rgba(110,84,255,0.35), 0 0 0 1px rgba(110,84,255,0.5)",
+        soft: "0 1px 3px rgba(0,0,0,0.06), 0 8px 24px rgba(0,0,0,0.04)",
+        "soft-lg": "0 24px 80px -32px rgba(15,23,42,0.12)",
       },
     },
   },

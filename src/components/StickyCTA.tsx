@@ -15,17 +15,17 @@ export function StickyCTA() {
 
   return (
     <div
-      className={`fixed bottom-0 left-0 right-0 z-50 border-t border-ink-800/80 bg-ink-950/90 shadow-[0_-12px_40px_-16px_rgba(0,0,0,0.55)] backdrop-blur-md transition-[transform,box-shadow] duration-300 ease-out md:hidden ${
+      className={`fixed bottom-0 left-0 right-0 z-50 border-t border-zinc-200/90 bg-white/95 shadow-[0_-8px_32px_rgba(15,23,42,0.08)] backdrop-blur-md transition-[transform,box-shadow] duration-300 ease-out md:hidden ${
         showBar ? "translate-y-0" : "translate-y-full"
       }`}
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-3">
-        <p className="font-display text-sm font-semibold tracking-tight text-ink-100">
+        <p className="min-w-0 truncate font-display text-sm font-semibold tracking-tight text-fg-primary">
           Monad Summer Founders
         </p>
         <a
           href={APPLY_URL}
-          className="shrink-0 rounded-full bg-ink-100 px-5 py-2.5 font-sans text-sm font-semibold text-ink-950 transition-[background-color,transform,box-shadow] duration-200 hover:bg-white active:scale-[0.98] motion-safe:hover:-translate-y-px"
+          className="relative inline-flex shrink-0 items-center justify-center overflow-hidden rounded-full bg-gradient-to-r from-monad-cta to-monad-cta px-5 py-2.5 font-mono text-xs font-medium uppercase tracking-wide text-white shadow-cta-primary transition-[transform,box-shadow] active:scale-[0.98] hover:shadow-cta-primary-hover"
         >
           Apply
         </a>

@@ -3,8 +3,9 @@
 @tailwind utilities;
 
 :root {
-  --font-sans: "DM Sans", system-ui, sans-serif;
+  --font-sans: "Inter", system-ui, sans-serif;
   --font-display: "Syne", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
 }
 
 html {
@@ -12,52 +13,51 @@ html {
 }
 
 body {
-  @apply min-h-screen overflow-x-hidden bg-ink-950 text-ink-100 antialiased;
-  font-feature-settings: "ss01" on, "cv01" on;
+  @apply min-h-screen overflow-x-hidden bg-surface text-fg-primary antialiased;
+  font-feature-settings: "cv02" on, "cv03" on, "cv04" on;
 }
 
 ::selection {
-  @apply bg-ink-200 text-ink-950;
+  @apply bg-monad/20 text-fg-primary;
 }
 
 @layer utilities {
-  .bg-grid-fine {
+  /** Figma template: white field + subtle violet wash toward bottom */
+  .bg-main-gradient {
     background-image:
-      linear-gradient(to right, rgb(41 37 36 / 0.55) 1px, transparent 1px),
-      linear-gradient(to bottom, rgb(41 37 36 / 0.55) 1px, transparent 1px);
-    background-size: 56px 56px;
-    mask-image: linear-gradient(to bottom, black 0%, transparent 88%);
+      linear-gradient(
+        161deg,
+        rgba(99, 86, 244, 0) 52%,
+        rgba(78, 68, 193, 0.08) 90%,
+        rgba(56, 43, 209, 0.14) 100%
+      ),
+      linear-gradient(90deg, #ffffff 0%, #ffffff 100%);
   }
 
-  .bg-dot-soft {
-    background-image: radial-gradient(rgb(87 83 78 / 0.35) 1px, transparent 1px);
-    background-size: 28px 28px;
-    mask-image: radial-gradient(ellipse 80% 60% at 50% 20%, black, transparent);
+  .bg-grid-light {
+    background-image:
+      linear-gradient(to right, rgb(228 228 231 / 0.6) 1px, transparent 1px),
+      linear-gradient(to bottom, rgb(228 228 231 / 0.6) 1px, transparent 1px);
+    background-size: 48px 48px;
+    mask-image: linear-gradient(to bottom, black 0%, transparent 92%);
+  }
+
+  .text-gradient-brand {
+    @apply bg-gradient-to-r from-fg-primary via-monad to-monad-deep bg-clip-text text-transparent;
   }
 
   .text-gradient-warm {
-    @apply bg-gradient-to-br from-ink-100 via-accent to-ink-400 bg-clip-text text-transparent;
+    @apply bg-gradient-to-br from-fg-primary via-monad/90 to-monad-deep bg-clip-text text-transparent;
   }
 
-  /* Hero-only grain - very subtle film texture */
   .hero-grain {
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-    opacity: 0.04;
-    mix-blend-mode: overlay;
+    opacity: 0.035;
+    mix-blend-mode: multiply;
   }
 
-  .border-gradient-subtle {
-    border: 1px solid transparent;
-    background:
-      linear-gradient(#0c0a09, #0c0a09) padding-box,
-      linear-gradient(
-          135deg,
-          rgb(68 64 60 / 0.95),
-          rgb(41 37 36 / 0.45),
-          rgb(232 220 200 / 0.14)
-        )
-        border-box;
-    background-clip: padding-box, border-box;
+  .border-card {
+    @apply border border-zinc-200/90;
   }
 
   .card-interactive {
@@ -65,7 +65,7 @@ body {
   }
 
   .card-interactive:hover {
-    @apply -translate-y-0.5 shadow-[0_32px_80px_-40px_rgba(0,0,0,0.75)];
+    @apply -translate-y-0.5 shadow-soft-lg;
   }
 
   @media (prefers-reduced-motion: reduce) {
