@@ -60,6 +60,10 @@ export default {
         "pulse-soft": "pulseSoft 3.5s ease-in-out infinite",
         "line-glow": "lineGlow 4s ease-in-out infinite",
         "hero-card-sheen": "heroCardSheen 10s ease-in-out infinite",
+        /** One-shot / site-wide polish */
+        "nav-settle": "navSettle 0.7s cubic-bezier(0.22, 1, 0.36, 1) both",
+        "canvas-rise": "canvasRise 1s cubic-bezier(0.22, 1, 0.36, 1) both",
+        "gradient-flow": "gradientFlow 12s ease-in-out infinite",
       },
       keyframes: {
         fadeUp: {
@@ -106,6 +110,18 @@ export default {
         heroCardSheen: {
           "0%, 100%": { opacity: "0.03" },
           "50%": { opacity: "0.09" },
+        },
+        navSettle: {
+          "0%": { transform: "translateY(-14px)", opacity: "0" },
+          "100%": { transform: "translateY(0)", opacity: "1" },
+        },
+        canvasRise: {
+          "0%": { transform: "translateY(22px)", opacity: "0.96" },
+          "100%": { transform: "translateY(0)", opacity: "1" },
+        },
+        gradientFlow: {
+          "0%, 100%": { backgroundPosition: "0% 50%" },
+          "50%": { backgroundPosition: "100% 50%" },
         },
       },
       transitionTimingFunction: {

@@ -25,11 +25,22 @@ export function Reveal({ children, className = "", delay = 0 }: RevealProps) {
 
   const show = visible || reducedMotion;
 
+  const hiddenMotion = "opacity-0 translate-y-7 scale-[0.985]";
+  const shownMotion = "opacity-100 translate-y-0 scale-100";
+  const hiddenReduced = "opacity-0";
+  const shownReduced = "opacity-100";
+
   return (
     <div
       ref={ref}
-      className={`w-full min-h-0 min-w-0 transition-[opacity,transform] duration-[820ms] ease-reveal motion-reduce:duration-300 ${
-        show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
+      className={`w-full min-h-0 min-w-0 transition-[opacity,transform] duration-[880ms] ease-reveal motion-reduce:duration-200 motion-reduce:transition-opacity ${
+        reducedMotion
+          ? show
+            ? shownReduced
+            : hiddenReduced
+          : show
+            ? shownMotion
+            : hiddenMotion
       } ${className}`}
       style={reducedMotion ? undefined : { transitionDelay: `${delay}ms` }}
     >

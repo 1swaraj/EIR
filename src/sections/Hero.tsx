@@ -43,7 +43,9 @@ export function Hero() {
               <span className="block whitespace-nowrap">Build before the world</span>
               <span className="mt-2 block whitespace-nowrap sm:mt-2.5">
                 <span className="text-fg-secondary">tells you to </span>
-                <span className="text-gradient-warm">wait</span>
+                <span className="text-gradient-warm bg-[length:240%_auto] motion-safe:animate-gradient-flow motion-reduce:animate-none">
+                  wait
+                </span>
                 <span className="text-fg-secondary">.</span>
               </span>
             </h1>
@@ -53,7 +55,7 @@ export function Hero() {
             <p className="mx-auto mt-8 max-w-xl text-pretty font-sans text-lg leading-relaxed text-fg-secondary md:text-xl">
               Prototype-first program for India&apos;s{" "}
               <span className="font-semibold text-fg-primary">misfit student builders</span>. You&apos;re already building. Now get paid to keep
-              going. Weekly demos, serious standards-on Monad.
+              going. 
             </p>
           </Reveal>
 

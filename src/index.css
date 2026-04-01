@@ -12,6 +12,12 @@ html {
   scroll-behavior: smooth;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 body {
   @apply min-h-screen overflow-x-hidden bg-surface text-fg-primary antialiased;
   font-feature-settings: "cv02" on, "cv03" on, "cv04" on;
@@ -90,7 +96,7 @@ body {
   }
 
   .card-interactive:hover {
-    @apply -translate-y-0.5 shadow-soft-lg;
+    @apply -translate-y-0.5 border-monad/20 shadow-soft-lg;
   }
 
   @media (prefers-reduced-motion: reduce) {

@@ -9,12 +9,12 @@ const cards = [
   },
   {
     n: "02",
-    title: "Weekly Operator Feedback",
+    title: "Weekly Feedback",
     body: "Direct, honest feedback on what you shipped. Not cheerleading. Real signal on what matters next.",
   },
   {
     n: "03",
-    title: "Monad Problem Statements",
+    title: "Problem Statements",
     body: "Access to curated RFPs, idea banks, and ecosystem-aligned problems worth solving.",
   },
   {

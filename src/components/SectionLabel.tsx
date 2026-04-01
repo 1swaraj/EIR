@@ -6,9 +6,15 @@ type SectionLabelProps = {
 export function SectionLabel({ children, align = "left" }: SectionLabelProps) {
   const line =
     align === "right" ? (
-      <span className="h-px w-10 shrink-0 bg-gradient-to-l from-monad/40 to-transparent" aria-hidden />
+      <span
+        className="h-px w-10 shrink-0 bg-gradient-to-l from-monad/40 to-transparent motion-safe:animate-line-glow motion-reduce:animate-none"
+        aria-hidden
+      />
     ) : (
-      <span className="h-px w-10 shrink-0 bg-gradient-to-r from-monad/40 to-transparent" aria-hidden />
+      <span
+        className="h-px w-10 shrink-0 bg-gradient-to-r from-monad/40 to-transparent motion-safe:animate-line-glow motion-reduce:animate-none"
+        aria-hidden
+      />
     );
 
   return (

@@ -23,7 +23,7 @@ export default function App() {
           so the light content reads as one sheet meeting the header with a curved joint.
         */}
         <div className="bg-surface-nav pt-20">
-          <div className="relative overflow-hidden rounded-t-[28px] bg-white shadow-[0_-2px_24px_rgba(0,0,0,0.12)] sm:rounded-t-[32px]">
+          <div className="relative overflow-hidden rounded-t-[28px] bg-white shadow-[0_-2px_24px_rgba(0,0,0,0.12)] motion-safe:animate-canvas-rise motion-reduce:animate-none sm:rounded-t-[32px]">
             <Hero />
             <TheProblem />
             <DefaultPath />

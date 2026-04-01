@@ -10,7 +10,7 @@ const NAV = [
 
 export function SiteHeader() {
   return (
-    <header className="fixed inset-x-0 top-0 z-[100] border-b border-white/[0.06] bg-surface-nav/95 pt-[env(safe-area-inset-top,0px)] shadow-nav backdrop-blur-[75px]">
+    <header className="fixed inset-x-0 top-0 z-[100] border-b border-white/[0.06] bg-surface-nav/95 pt-[env(safe-area-inset-top,0px)] shadow-nav backdrop-blur-[75px] motion-safe:animate-nav-settle motion-reduce:animate-none">
       <div className="mx-auto flex h-20 w-full max-w-[90rem] items-center justify-between gap-6 px-4 sm:gap-8 sm:px-8 md:px-10 lg:gap-12 lg:px-14 xl:px-16">
         <a href="#top" className="group flex min-w-0 max-w-[min(100%,48%)] shrink items-center gap-2.5 sm:max-w-none sm:gap-4">
           <MonadLogoFull
@@ -46,6 +46,10 @@ export function SiteHeader() {
             href={APPLY_URL}
             className="relative inline-flex shrink-0 items-center justify-center overflow-hidden rounded-full bg-gradient-to-r from-monad-cta to-monad-cta px-3 py-2 font-mono text-[11px] font-medium uppercase tracking-wide text-white shadow-cta-primary transition-[transform,box-shadow] hover:shadow-cta-primary-hover active:scale-[0.98] sm:px-5 sm:text-[13px]"
           >
+            <span
+              className="pointer-events-none absolute -left-1/4 top-0 h-full w-[150%] skew-x-[-14deg] bg-gradient-to-r from-transparent via-white/18 to-transparent opacity-50 motion-safe:animate-hero-shimmer motion-reduce:hidden"
+              aria-hidden
+            />
             <span className="relative">Apply</span>
           </a>
         </div>
